@@ -3,15 +3,21 @@ using UnityEngine;
 
 namespace ClownMeister.CityAi.Manager
 {
+    [RequireComponent(typeof(NodeGridRenderer))]
     public class GridManager : MonoBehaviour
     {
-        public Vector2Int gridResolution;
+        private NodeGridRenderer gridRenderer;
+
+        public NodeGridSettings gridSettings;
 
         private NodeGrid grid;
 
         private void Start()
         {
-            this.grid = new NodeGrid(this.gridResolution);
+            this.gridRenderer = GetComponent<NodeGridRenderer>();
+            this.grid = new NodeGrid(this.gridSettings);
+
+            this.gridRenderer.Render(this.grid, this.gridSettings);
         }
     }
 }
