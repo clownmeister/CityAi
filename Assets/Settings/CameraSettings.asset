@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b63bf3efde458988be117d2d80129f, type: 3}
   m_Name: CameraSettings
   m_EditorClassIdentifier: 
-  moveSpeed: 100
+  moveSpeed: 15
   interpolateSpeed: 0.2
