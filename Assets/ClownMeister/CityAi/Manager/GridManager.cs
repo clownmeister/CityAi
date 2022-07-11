@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace ClownMeister.CityAi.Manager
 {
-    [RequireComponent(typeof(NodeGridRenderer))]
     public class GridManager : MonoBehaviour
     {
         private NodeGridRenderer gridRenderer;
